@@ -2,6 +2,7 @@
 [http://v.gd](http://v.gd) URL Shortener Node.js Module
 
 [![Coverage Status](https://coveralls.io/repos/AlphaT3ch/v.gd/badge.svg)](https://coveralls.io/r/AlphaT3ch/v.gd)
+[![Travis CI Status](https://travis-ci.org/AlphaT3ch/v.gd.svg)](https://travis-ci.org/AlphaT3ch/v.gd)
 
 Example Shorten:
 
