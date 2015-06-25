@@ -17,3 +17,5 @@ vgd.shorten('http://google.com', function(res) {
 	console.log(res); //Returns a shorter version of http://google.com - http://v.gd/ddwyMm
 });
 ```
+
+[This Package Is Under The GPL-3.0 License](https://raw.githubusercontent.com/AlphaT3ch/v.gd/master/LICENSE.txt)

@@ -1,6 +1,6 @@
 {
   "name": "vgd",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "http://v.gd URL Shortener Node.js Module",
   "main": "index.js",
   "dependencies": {
@@ -33,5 +33,6 @@
     "url": "https://github.com/AlphaT3ch/v.gd/issues"
   },
   "homepage": "https://github.com/AlphaT3ch/v.gd",
-  "readmeFile": "README.md"
+  "readmeFile": "README.md",
+  "license": "GPL-3.0"
 }
