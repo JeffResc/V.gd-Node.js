@@ -7,7 +7,7 @@ module.exports = {
         });
     },
     lookup: function(url, cb) {
-        request('http://v.gd/forward.php?shorturl=' + url, function (error, response, body) {
+        request('http://v.gd/forward.php?format=simple&shorturl=' + url, function (error, response, body) {
 			cb(body.split("\n")[0]);
         });
     }
