@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/vgd.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vgd/)
+[![NPM](https://nodei.co/npm/vgd.png?downloads=true&downloadRank=true&stars=true)](https://nodejs.com/package/vgd/)
 
 # V.gd
 [http://v.gd](http://v.gd) URL Shortener Node.js Module
