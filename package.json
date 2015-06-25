@@ -1,6 +1,6 @@
 {
   "name": "vgd",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "http://v.gd URL Shortener Node.js Module",
   "main": "index.js",
   "dependencies": {
