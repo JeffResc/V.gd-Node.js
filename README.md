@@ -16,6 +16,10 @@ var vgd = require('vgd');
 vgd.shorten('http://google.com', function(res) {
 	console.log(res); //Returns a shorter version of http://google.com - http://v.gd/ddwyMm
 });
+
+vgd.lookup('http://v.gd/ddwyMm', function(res) {
+	console.log(res); //Returns a longer version of http://v.gd/ddwyMm - http://google.com
+});
 ```
 
 [This Package Is Under The GPL-3.0 License](https://raw.githubusercontent.com/AlphaT3ch/v.gd/master/LICENSE.txt)
