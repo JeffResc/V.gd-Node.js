@@ -1,19 +1,19 @@
-var request = require('request');
+const get = require('./get');
 
 module.exports = {
     shorten: function(url, cb) {
-        request('http://v.gd/create.php?format=simple&url=' + encodeURIComponent(url), function (error, response, body) {
-		cb(body.split("\n")[0]);
+        get('https://v.gd/create.php?format=simple&url=' + encodeURIComponent(url), function (body) {
+            cb(body.split("\n")[0]);
         });
     },
     custom: function(url, text, cb) {
-	request('http://v.gd/create.php?format=simple&url=' + encodeURIComponent(url) + '&shorturl=' + encodeURIComponent(text), function (error, response, body) {
-		cb(body.split("\n")[0]);
-	});
+      	get('https://v.gd/create.php?format=simple&url=' + encodeURIComponent(url) + '&shorturl=' + encodeURIComponent(text), function (body) {
+        		cb(body.split("\n")[0]);
+      	});
     },
     lookup: function(url, cb) {
-        request('http://v.gd/forward.php?format=simple&shorturl=' + encodeURIComponent(url), function (error, response, body) {
-		cb(body.split("\n")[0]);
+        get('https://v.gd/forward.php?format=simple&shorturl=' + encodeURIComponent(url), function (body) {
+        		cb(body.split("\n")[0]);
         });
     }
 };
