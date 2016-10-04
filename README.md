@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/vgd.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.com/package/vgd/)
 
-# V.gd
+# V.gd [![Build Status](https://travis-ci.org/AlphaT3ch/v.gd.svg?branch=master)](https://travis-ci.org/AlphaT3ch/v.gd)
 [http://v.gd](http://v.gd) URL Shortener Node.js Module
 
 Example Shorten:
@@ -23,4 +23,4 @@ vgd.lookup('http://v.gd/ddwyMm', function(res) {
 });
 ```
 
-[This Package Is Under The GPL-3.0 License](https://raw.githubusercontent.com/AlphaT3ch/v.gd/master/LICENSE.txt)
+[This Package Is Under The MIT License](https://raw.githubusercontent.com/AlphaT3ch/v.gd/master/LICENSE.txt)
