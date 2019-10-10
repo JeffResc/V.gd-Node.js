@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var markdown = require('gulp-markdown');
 
-gulp.task('default', function() {
+gulp.task('default', (done) {
   gulp.src('./*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
@@ -10,9 +10,10 @@ gulp.task('default', function() {
   gulp.src('./*.md')
     .pipe(markdown())
     .pipe(gulp.dest('./build/markdown'));
+  done();
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     gulp.watch('./*.js', ['default']);
     gulp.watch('./*.md', ['default']);
 });
