@@ -1,5 +1,5 @@
 var get = require('./get');
-let uu = require('url-unshort')();
+var uu = require('url-unshort')();
 
 module.exports = {
     shorten: function(url, cb) {
@@ -19,11 +19,11 @@ module.exports = {
     },
     resolve: function (url, cb) {
         uu.expand(url)
-            .then(url => {
-                if (url) cb(url);
+            .then(function (url) {
+                if (url) cb(null, url);
                 // no shortening service or an unknown one is used
-                else console.log('This url can\'t be expanded');
+                else cb('This url can\'t be expanded', null);
             })
-            .catch(err => console.log(err));
+            .catch(function (err) { cb(err, null) });
     }
 };
