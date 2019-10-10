@@ -24,6 +24,6 @@ module.exports = {
                 // no shortening service or an unknown one is used
                 else cb('This url can\'t be expanded', null);
             })
-            .catch(function (err) { cb(err, null) });
+            .catch(function (err) { cb(err, null); });
     }
 };
