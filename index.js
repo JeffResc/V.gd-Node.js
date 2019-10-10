@@ -20,10 +20,10 @@ module.exports = {
     resolve: function (url, cb) {
         uu.expand(url)
             .then(url => {
-                if (url) cb(url);
+                if (url) cb(null, url);
                 // no shortening service or an unknown one is used
-                else console.log('This url can\'t be expanded');
+                else cb('This url can\'t be expanded', null);
             })
-            .catch(err => console.log(err));
+            .catch(err => cb(err, null));
     }
 };
