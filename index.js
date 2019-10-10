@@ -1,4 +1,5 @@
 var get = require('./get');
+let uu = require('url-unshort')();
 
 module.exports = {
     shorten: function(url, cb) {
@@ -15,5 +16,14 @@ module.exports = {
         get('https://v.gd/forward.php?format=simple&shorturl=' + encodeURIComponent(url), function (body) {
         		cb(body.split("\n")[0]);
         });
+    },
+    resolve: function (url, cb) {
+        uu.expand(url)
+            .then(url => {
+                if (url) cb(url);
+                // no shortening service or an unknown one is used
+                else console.log('This url can\'t be expanded');
+            })
+            .catch(err => console.log(err));
     }
 };

@@ -6,7 +6,8 @@
   "devDependencies": {
     "gulp": "3.8.11",
     "gulp-jshint": "1.10.0",
-    "gulp-markdown": "1.0.0"
+    "gulp-markdown": "1.0.0",
+    "url-unshort": "^5.0.0"
   },
   "scripts": {
     "main": "node index.js",
